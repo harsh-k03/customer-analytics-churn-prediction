@@ -1,0 +1,11 @@
+Customer,Prediction,Probability,Risk
+0,0,0.1367,Low Risk
+1,0,0.3955,Medium Risk
+2,0,0.2684,Low Risk
+3,1,0.6189,Medium Risk
+4,1,0.5791,Medium Risk
+5,0,0.3196,Medium Risk
+6,0,0.3832,Medium Risk
+7,1,0.667,Medium Risk
+8,0,0.3752,Medium Risk
+9,1,0.7611,High Risk
