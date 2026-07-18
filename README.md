@@ -19,7 +19,8 @@ The project includes a complete end-to-end machine learning pipeline, from data 
 
 ## 🌐 Live Demo
 
-**Coming Soon** *(Will be updated after Streamlit deployment.)*
+🚀 **Live Streamlit App:**  
+https://customer-analytics-churn-prediction-aq9cfwftfz7jkwn4xszx6h.streamlit.app/
 
 ---
 
