@@ -1,6 +1,6 @@
 # 📊 Customer Analytics & Churn Prediction
 
-![Python](https://img.shields.io/badge/Python-3.12-blue)
+![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-orange)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
