@@ -16,9 +16,5 @@ __pycache__/
 # Mac
 .DS_Store
 
-# Model files
-*.pkl
-*.joblib
-
 # Environment Variables
 .env
