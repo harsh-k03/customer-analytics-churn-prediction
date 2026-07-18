@@ -264,5 +264,5 @@ if st.button("Predict Churn", use_container_width=True):
     st.progress(probability)
 
     st.info(
-        f"Model confidence: {probability*100:.2f}%"
-    )
+    f"Model confidence: {probability*100:.2f}%"
+)

@@ -61,34 +61,42 @@ https://customer-analytics-churn-prediction-aq9cfwftfz7jkwn4xszx6h.streamlit.app
 
 **Dataset:** Telco Customer Churn Dataset
 
+**Source:** IBM Sample Data / Kaggle
+
+https://www.kaggle.com/datasets/blastchar/telco-customer-churn
+
 The dataset contains customer demographics, subscribed services, account information, billing details, and customer churn status.
 
 ---
 
 ## 🤖 Machine Learning Models
 
-The following models were trained and evaluated:
+The following machine learning models were trained and evaluated:
 
 - Logistic Regression
 - Decision Tree
-- Random Forest
+- Random Forest (Baseline)
+- Random Forest (Optimized using GridSearchCV)
 
 ## 📈 Model Performance
 
 | Model | Accuracy |
 |--------|----------|
-| Logistic Regression | XX.XX% |
-| Decision Tree | XX.XX% |
-| **Random Forest** | **79.3%** |
+| Logistic Regression | **79.30%** |
+| Decision Tree | **71.41%** |
+| Random Forest (Baseline) | **78.11%** |
+| Random Forest (Optimized) | **79.03%** |
 
-The Random Forest model achieved the highest accuracy and was selected as the production model for customer churn prediction.
+Although Logistic Regression achieved the highest baseline accuracy (79.30%), the **Optimized Random Forest** was selected for deployment after hyperparameter tuning with **GridSearchCV**. The optimized model achieved comparable performance while demonstrating a complete model optimization workflow suitable for production deployment.
 
-### Best Model
+### 🚀 Deployed Model
 
-- **Random Forest**
-- **Accuracy:** **79.3%**
+- **Optimized Random Forest**
+- Hyperparameter Optimization: **GridSearchCV**
+- Accuracy: **79.03%**
+- ROC-AUC: **0.829**
 
-The best-performing model is deployed in the dashboard for real-time churn prediction.
+The deployed model is used throughout the dashboard for real-time customer churn prediction.
 
 ---
 
@@ -215,7 +223,6 @@ streamlit run dashboard/Home.py
 
 ## 📈 Future Improvements
 
-- Hyperparameter tuning
 - SHAP explainability
 - XGBoost and LightGBM implementation
 - Customer segmentation

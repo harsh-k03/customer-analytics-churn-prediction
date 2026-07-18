@@ -22,7 +22,7 @@ joblib.load(
     BASE_DIR / "models" / "best_random_forest.pkl"
 )
 
-accuracy = 0.793
+accuracy = 0.7903
 
 total_customers = len(df)
 churn_rate = (df["Churn"] == "Yes").mean() * 100
@@ -33,7 +33,11 @@ churn_rate = (df["Churn"] == "Yes").mean() * 100
 st.title("📊 Customer Analytics & Churn Prediction")
 
 st.markdown(
-    "Predict customer churn using Machine Learning through an interactive dashboard."
+    """
+An interactive machine learning dashboard that predicts customer churn,
+compares multiple classification models, and deploys an optimized
+Random Forest model for inference.
+"""
 )
 
 st.divider()
@@ -57,9 +61,9 @@ with col2:
 
 with col3:
     st.metric(
-        "🤖 Best Model Accuracy",
-        f"{accuracy*100:.1f}%"
-    )
+    "🤖 Deployed Model Accuracy",
+    f"{accuracy*100:.2f}%"
+)
 
 st.divider()
 
@@ -73,11 +77,10 @@ with left:
     st.subheader("📌 Project Overview")
 
     st.write("""
-Predict customer churn using customer demographics, subscribed services,
-contract details, and billing history.
-
-The dashboard combines exploratory analysis, machine learning, and business
-insights to help identify high-risk customers and support retention strategies.
+The dashboard combines exploratory data analysis, machine learning model
+comparison, hyperparameter optimization, customer-level churn prediction,
+and business insights to help identify high-risk customers and support
+retention strategies.
 """)
 
 with right:
